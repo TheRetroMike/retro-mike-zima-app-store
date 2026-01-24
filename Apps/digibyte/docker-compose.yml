@@ -1,0 +1,48 @@
+name: retro-mike-digibyte
+services:
+  app:
+    container_name: dgb
+    image: theretromike/nodes:digibyte
+    restart: always
+    volumes:
+      # Mounting docker.sock to allow docker management via the container
+      - /DATA/dgb:/root/.digibyte
+    ports:
+      - "7001:7001"
+      - "9001:9001"
+      - "12024:12024"
+    entrypoint: /usr/bin/digibyted
+    command: "-printtoconsole -server -algo=sha256d -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7001 -rpcbind=0.0.0.0 -rpcport=9001 -rpcallowip=0.0.0.0/0 -rpcauth=pooluser:bc1f961ad347f79ab97fa7e3ac35f02a$$eb31de681359ba83be70e2cc178bf7de7b3b7affb29df2fb41907436d8ef734e"
+    x-casaos:
+      volumes:
+        - container: /root/.digibyte
+          description:
+            en_us: 'Container Path: /root/.digibyte'
+      ports:
+        - container: "7001"
+          description:
+            en_us: 'Container Port: 7001'
+        - container: "9001"
+          description:
+            en_us: 'Container Port: 9001'
+        - container: "12024"
+          description:
+            en_us: 'Container Port: 12024'
+x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Digibyte Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.
+  tagline:
+    en_us: Digibyte Cryptocurrency Node.
+  developer: Retro Mike
+  author: Retro Mike
+  icon: https://github.com/DigiByte-Core/digibyte-logos/blob/master/Logos%20Bitmap/transparent%20bg/ClearBg%20DigiByte.png?raw=true
+  # Thumbnail image for the application (if any)
+  thumbnail: ""
+  # Title for the application
+  title:
+    en_us: Digibyte (DGB) Node
+  category: RetroMikeTech
+  port_map: "8888"
