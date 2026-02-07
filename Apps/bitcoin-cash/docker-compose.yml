@@ -42,5 +42,5 @@ x-casaos:
   # Title for the application
   title:
     en_us: Bitcoin Cash (BCH) Node
-  category: RetroMikeTech
+  category: Cryptocurrency Nodes
   port_map: "8888"
