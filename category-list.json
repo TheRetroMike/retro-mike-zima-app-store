@@ -5,8 +5,14 @@
     "description": "Cryptocurrency Nodes"
   },
   {
+    "name": "RetroMike",
+    "font": "toolbox-outline",
+    "description": "Retro Mike Apps"
+  },  
+  {
     "name": "Utilities",
     "font": "toolbox-outline",
     "description": "Utilities Apps"
   }
 ]
+
