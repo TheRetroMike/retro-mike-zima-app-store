@@ -1,0 +1,43 @@
+name: retro-mike-ravencoin
+services:
+  app:
+    container_name: rvn
+    image: theretromike/nodes:ravencoin
+    restart: always
+    volumes:
+      # Mounting docker.sock to allow docker management via the container
+      - /media/ZimaOS-HD/rvn:/root/.raven
+    ports:
+      - "7002:7002"
+      - "9002:9002"
+      - "8334:8334"
+    command: "/usr/bin/ravend -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7010 -rpcbind=0.0.0.0 -rpcport=9010 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
+    x-casaos:
+      volumes:
+        - container: /root/.raven
+          description:
+            en_us: 'Container Path: /root/.raven'
+      ports:
+        - container: "7010"
+          description:
+            en_us: 'Container Port: 7010'
+        - container: "9010"
+          description:
+            en_us: 'Container Port: 9010'
+x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Ravencoin Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.
+  tagline:
+    en_us: Ravencoin Cryptocurrency Node.
+  developer: Retro Mike
+  author: Retro Mike
+  icon: https://cryptologos.cc/logos/ravencoin-rvn-logo.png
+  thumbnail: ""
+  # Title for the application
+  title:
+    en_us: Ravencoin (RVN) Node
+  category: RetroMike
+  port_map: "8888"

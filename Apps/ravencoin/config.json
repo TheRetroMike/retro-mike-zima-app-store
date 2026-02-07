@@ -1,0 +1,7 @@
+{
+  "id": "ravencoin",
+  "version": "v1.0.0",
+  "image": "theretromike/nodes:ravencoin",
+  "youtube": "https://youtube.com/@RetroMikeTech",
+  "docs_link": ""
+}
