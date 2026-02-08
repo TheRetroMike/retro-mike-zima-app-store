@@ -24,15 +24,15 @@ x-casaos:
     - amd64
   main: app
   description:
-    en_us: Miningcore Web UI
+    en_us: Miningcore Web UI (Legacy)
   tagline:
-    en_us: Miningcore Web UI
+    en_us: Miningcore Web UI (Legacy)
   developer: Retro Mike
   author: Retro Mike
   icon: https://raw.githubusercontent.com/TheRetroMike/retromike-umbrel-app-store/master/retro-mike-miningcore-webui/webui.png
   thumbnail: ""
   store_app_id: retro-mike-miningcore-webui-legacy
   title:
-    en_us: Miningcore Web UI
+    en_us: Miningcore Web UI (Legacy)
   category: RetroMike
   port_map: "81"
