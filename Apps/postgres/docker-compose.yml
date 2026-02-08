@@ -1,4 +1,4 @@
-name: postgresql
+name: retro-mike-postgresql
 services:
   app:
     container_name: postgresql
