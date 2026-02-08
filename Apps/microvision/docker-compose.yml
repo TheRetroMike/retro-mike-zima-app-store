@@ -1,7 +1,7 @@
 name: retro-mike-microvision
 services:
   app:
-    container_name: rvn
+    container_name: space
     image: theretromike/nodes:microvision
     restart: always
     volumes:
