@@ -1,15 +1,16 @@
-name: bitcoin
+name: retro-mike-bitcoin
 services:
   app:
-    command: "/usr/bin/bitcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://0.0.0.0:7004 -rpcbind=0.0.0.0 -rpcport=9004 -rpcallowip=0.0.0.0/0 -port=8333 -rpcuser=pooluser -rpcpassword=poolpassword"
     container_name: btc
     image: theretromike/nodes:bitcoin
+    restart: always
+    volumes:
+      - /media/ZimaOS-HD/btc:/root/.bitcoin
     ports:
       - "7004:7004"
       - "9004:9004"
-    restart: unless-stopped
-    volumes:
-      - /media/ZimaOS-HD/btc:/root/.bitcoin
+      - "8333:8333"
+    command: "/usr/bin/bitcoin -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7004 -rpcbind=0.0.0.0 -rpcport=9004 -rpcallowip=0.0.0.0/0 -port=8333 -rpcuser=pooluser -rpcpassword=poolpassword"
     x-casaos:
       volumes:
         - container: /root/.bitcoin
@@ -22,6 +23,9 @@ services:
         - container: "9004"
           description:
             en_us: 'Container Port: 9004'
+        - container: "8333"
+          description:
+            en_us: 'Container Port: 8333'
 x-casaos:
   architectures:
     - amd64
