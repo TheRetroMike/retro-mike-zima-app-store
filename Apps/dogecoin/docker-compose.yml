@@ -1,0 +1,28 @@
+name: dogecoin
+services:
+  app:
+    container_name: doge
+    image: theretromike/nodes:dogecoin
+    restart: always
+    volumes:
+      - /media/ZimaOS-HD/doge:/root/.dogecoin
+    ports:
+      - "7003:7003"
+      - "9003:9003"
+    command: "/usr/bin/dogecoind -printtoconsole -server -prune=2200 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7003 -rpcbind=0.0.0.0 -rpcport=9003 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
+x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Dogecoin Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.
+  tagline:
+    en_us: Dogecoin Cryptocurrency Node.
+  developer: Retro Mike
+  author: Retro Mike
+  icon: https://upload.wikimedia.org/wikipedia/en/d/d0/Dogecoin_Logo.png
+  thumbnail: ""
+  title:
+    en_us: Dogecoin (DOGE) Node
+  category: RetroMike
+  port_map: "8888"

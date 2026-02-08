@@ -7,7 +7,7 @@ services:
     volumes:
       - /media/ZimaOS-HD/postgres:/var/lib/postgresql/data
     ports:
-      - "8432:5432"
+      - "5432:5432"
     environment:
       - PGID=1000
       - POSTGRES_DB=zimaos
