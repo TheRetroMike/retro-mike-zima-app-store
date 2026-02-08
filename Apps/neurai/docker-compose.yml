@@ -1,7 +1,14 @@
 name: neurai
 services:
-  main_app:
-    cpu_shares: 10
+  app:
+    container_name: xna
+    image: theretromike/nodes:neurai
+    restart: always
+    volumes:
+      - /media/ZimaOS-HD/NodeData/xna:/root/.neurai
+    ports:
+      - "7011:7011"
+      - "9011:9011"
     command:
       - /usr/bin/neuraid
       - -printtoconsole
@@ -14,42 +21,19 @@ services:
       - -rpcallowip=0.0.0.0/0
       - -rpcuser=pooluser
       - -rpcpassword=poolpassword
-    container_name: xna
-    deploy:
-      resources:
-        limits:
-          memory: 67292020736
-        reservations:
-          devices: []
-    image: theretromike/nodes:neurai
-    labels:
-      icon: https://s2.coinmarketcap.com/static/img/coins/200x200/27195.png
-    ports:
-      - target: 9011
-        published: "9011"
-        protocol: tcp
-      - target: 7011
-        published: "7011"
-        protocol: tcp
-    restart: unless-stopped
-    volumes:
-      - type: bind
-        source: /media/ZimaOS-HD/NodeData/xna
-        target: /root/.neurai
-    devices: []
-    cap_add: []
-    environment: []
-    network_mode: bridge
-    privileged: false
 x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Neurai Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.
+  tagline:
+    en_us: Neurai Cryptocurrency Node.
+  developer: Retro Mike
   author: Retro Mike
-  category: RetroMike
-  hostname: ""
   icon: https://s2.coinmarketcap.com/static/img/coins/200x200/27195.png
-  index: /
-  is_uncontrolled: false
-  port_map: "8888"
-  scheme: http
-  store_app_id: neurai
+  thumbnail: ""
   title:
-    custom: NeurAI (XNA) Node
+    en_us: NeurAI (XNA) Node
+  category: RetroMike
+  port_map: "8888"
