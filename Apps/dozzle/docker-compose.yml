@@ -1,14 +1,14 @@
 # Configuration for dozzle setup
 
 # Name of the big-bear-dozzle application
-name: big-bear-dozzle
+name: dozzle
 # Service definitions for the big-bear-dozzle application
 services:
   # Service name: app
   # The `app` service definition
   app:
     # Name of the container
-    container_name: big-bear-dozzle
+    container_name: dozzle
     # Image to be used for the container
     image: amir20/dozzle:v9.0.2
     # Container restart policy
