@@ -1,19 +1,7 @@
 name: bitcoin
 services:
   main_app:
-    command:
-      - /usr/bin/bitcoind
-      - -printtoconsole
-      - -server
-      - -prune=550
-      - -wallet=default
-      - -zmqpubhashblock=tcp://0.0.0.0:7004
-      - -rpcbind=0.0.0.0
-      - -rpcport=9004
-      - -rpcallowip=0.0.0.0/0
-      - -port=8333
-      - -rpcuser=pooluser
-      - -rpcpassword=poolpassword
+    command: "/usr/bin/bitcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://0.0.0.0:7004 -rpcbind=0.0.0.0 -rpcport=9004 -rpcallowip=0.0.0.0/0 -port=8333 -rpcuser=pooluser -rpcpassword=poolpassword"
     container_name: btc
     image: theretromike/nodes:bitcoin
     labels:
