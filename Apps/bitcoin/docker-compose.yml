@@ -1,7 +1,6 @@
 name: bitcoin
 services:
   main_app:
-    cpu_shares: 10
     command:
       - /usr/bin/bitcoind
       - -printtoconsole
@@ -16,12 +15,6 @@ services:
       - -rpcuser=pooluser
       - -rpcpassword=poolpassword
     container_name: btc
-    deploy:
-      resources:
-        limits:
-          memory: 67292020736
-        reservations:
-          devices: []
     image: theretromike/nodes:bitcoin
     labels:
       icon: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png
@@ -43,14 +36,18 @@ services:
     network_mode: bridge
     privileged: false
 x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Bitcoin Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.
+  tagline:
+    en_us: Bitcoin Cryptocurrency Node.
+  developer: Retro Mike
   author: Retro Mike
-  category: RetroMike
-  hostname: ""
   icon: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png
-  index: /
-  is_uncontrolled: false
-  port_map: "8888"
-  scheme: http
-  store_app_id: bitcoin
+  thumbnail: ""
   title:
-    custom: Bitcoin (BTC) Node
+    en_us: Bitcoin (BTC) Node
+  category: RetroMike
+  port_map: "8888"
