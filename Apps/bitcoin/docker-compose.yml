@@ -5,12 +5,12 @@ services:
     image: theretromike/nodes:bitcoin
     restart: always
     volumes:
-      - /media/ZimaOS-HD/btc:/root/.bitcoin
+      - /media/ZimaOS-HD/NodeData/btc:/root/.bitcoin
     ports:
       - "7004:7004"
       - "9004:9004"
       - "8333:8333"
-    command: "/usr/bin/bitcoin -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7004 -rpcbind=0.0.0.0 -rpcport=9004 -rpcallowip=0.0.0.0/0 -port=8333 -rpcuser=pooluser -rpcpassword=poolpassword"
+    command: "/usr/bin/bitcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7004 -rpcbind=0.0.0.0 -rpcport=9004 -rpcallowip=0.0.0.0/0 -port=8333 -rpcuser=pooluser -rpcpassword=poolpassword"
     x-casaos:
       volumes:
         - container: /root/.bitcoin

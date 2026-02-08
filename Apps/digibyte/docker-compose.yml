@@ -6,7 +6,7 @@ services:
     restart: always
     volumes:
       # Mounting docker.sock to allow docker management via the container
-      - /DATA/dgb:/root/.digibyte
+      - /media/ZimaOS-HD/NodeData/dgb:/root/.digibyte
     ports:
       - "7001:7001"
       - "9001:9001"

@@ -5,7 +5,7 @@ services:
     image: theretromike/nodes:dogecoin
     restart: always
     volumes:
-      - /media/ZimaOS-HD/doge:/root/.dogecoin
+      - /media/ZimaOS-HD/NodeData/doge:/root/.dogecoin
     ports:
       - "7003:7003"
       - "9003:9003"

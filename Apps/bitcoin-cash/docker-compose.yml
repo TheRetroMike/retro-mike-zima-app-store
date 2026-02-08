@@ -6,12 +6,12 @@ services:
     restart: always
     volumes:
       # Mounting docker.sock to allow docker management via the container
-      - /media/ZimaOS-HD/bch:/root/.bitcoin
+      - /media/ZimaOS-HD/NodeData/bch:/root/.bitcoin
     ports:
       - "7002:7002"
       - "9002:9002"
       - "8334:8334"
-    command: "/usr/bin/bitcoin -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7002 -rpcbind=0.0.0.0 -rpcport=9002 -rpcallowip=0.0.0.0/0 -port=8334 -rpcuser=pooluser -rpcpassword=poolpassword"
+    command: "/usr/bin/bitcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7002 -rpcbind=0.0.0.0 -rpcport=9002 -rpcallowip=0.0.0.0/0 -port=8334 -rpcuser=pooluser -rpcpassword=poolpassword"
     x-casaos:
       volumes:
         - container: /root/.bitcoin
