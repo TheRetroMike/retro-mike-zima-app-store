@@ -1,11 +1,9 @@
 name: bitcoin
 services:
-  main_app:
+  app:
     command: "/usr/bin/bitcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://0.0.0.0:7004 -rpcbind=0.0.0.0 -rpcport=9004 -rpcallowip=0.0.0.0/0 -port=8333 -rpcuser=pooluser -rpcpassword=poolpassword"
     container_name: btc
     image: theretromike/nodes:bitcoin
-    labels:
-      icon: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png
     ports:
       - target: 9004
         published: "9004"
