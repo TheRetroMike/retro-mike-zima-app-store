@@ -1,7 +1,0 @@
-{
-  "id": "bitcoincash",
-  "version": "v1.0.1",
-  "image": "theretromike/nodes:bitcoincash",
-  "youtube": "https://youtube.com/@RetroMikeTech",
-  "docs_link": ""
-}

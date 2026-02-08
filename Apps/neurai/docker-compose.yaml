@@ -1,0 +1,55 @@
+name: neurai
+services:
+  main_app:
+    cpu_shares: 10
+    command:
+      - /usr/bin/neuraid
+      - -printtoconsole
+      - -server
+      - -prune=550
+      - -wallet=default
+      - -zmqpubhashblock=tcp://0.0.0.0:7011
+      - -rpcbind=0.0.0.0
+      - -rpcport=9011
+      - -rpcallowip=0.0.0.0/0
+      - -rpcuser=pooluser
+      - -rpcpassword=poolpassword
+    container_name: xna
+    deploy:
+      resources:
+        limits:
+          memory: 67292020736
+        reservations:
+          devices: []
+    image: theretromike/nodes:neurai
+    labels:
+      icon: https://s2.coinmarketcap.com/static/img/coins/200x200/27195.png
+    ports:
+      - target: 9011
+        published: "9011"
+        protocol: tcp
+      - target: 7011
+        published: "7011"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /media/ZimaOS-HD/NodeData/xna
+        target: /root/.neurai
+    devices: []
+    cap_add: []
+    environment: []
+    network_mode: bridge
+    privileged: false
+x-casaos:
+  author: Retro Mike
+  category: RetroMike
+  hostname: ""
+  icon: https://s2.coinmarketcap.com/static/img/coins/200x200/27195.png
+  index: /
+  is_uncontrolled: false
+  port_map: "8888"
+  scheme: http
+  store_app_id: neurai
+  title:
+    custom: NeurAI (XNA) Node

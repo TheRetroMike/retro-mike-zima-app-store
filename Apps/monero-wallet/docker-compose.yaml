@@ -1,0 +1,51 @@
+name: monero-wallet
+services:
+  main_app:
+    cpu_shares: 10
+    command:
+      - /usr/local/bin/monero-wallet-rpc
+      - --wallet-file=/root/.bitmonero/default
+      - --password=poolpassword
+      - --daemon-address=192.168.1.101:9009
+      - --daemon-login=pooluser:poolpassword
+      - --rpc-bind-port=18082
+      - --rpc-bind-ip=0.0.0.0
+      - --confirm-external-bind
+      - --disable-rpc-login
+      - --log-level=1
+    container_name: xmrwallet
+    deploy:
+      resources:
+        limits:
+          memory: 67292020736
+        reservations:
+          devices: []
+    image: theretromike/nodes:monero
+    labels:
+      icon: https://cryptologos.cc/logos/monero-xmr-logo.png
+    ports:
+      - target: 18082
+        published: "18082"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /media/ZimaOS-HD/NodeData/xmrwallet
+        target: /root/.bitmonero
+    devices: []
+    cap_add: []
+    environment: []
+    network_mode: bridge
+    privileged: false
+x-casaos:
+  author: Retro Mike
+  category: RetroMike
+  hostname: ""
+  icon: https://cryptologos.cc/logos/monero-xmr-logo.png
+  index: /
+  is_uncontrolled: false
+  port_map: "8888"
+  scheme: http
+  store_app_id: monero-wallet
+  title:
+    custom: Monero (XMR) Wallet

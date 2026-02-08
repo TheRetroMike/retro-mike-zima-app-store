@@ -1,0 +1,38 @@
+name: retro-mike-miningcore-webui-legacy
+services:
+  app:
+    container_name: miningcorewebui
+    image: theretromike/miningcorewebui:latest
+    restart: always
+    volumes:
+      - /media/ZimaOS-HD/miningcore_legacy:/app/miningcore
+    ports:
+      - "82:8080"
+    environment:
+      - API_BASE_URL=http://192.168.1.100:4001/api
+      - MININGCORE_HOST=192.168.1.101
+      - PLATFORM=ZIMAOS
+      - POOL_NAME=Self-Hosted Mining Pool
+      - POSTGRES_DATABASE=zimaos
+      - POSTGRES_HOST=192.168.1.100
+      - POSTGRES_PASSWORD=P@ssw0rd
+      - POSTGRES_USER=admin
+      - PUID=1000
+      - STRATUM_HOST=192.168.1.100
+x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Miningcore Web UI
+  tagline:
+    en_us: Miningcore Web UI
+  developer: Retro Mike
+  author: Retro Mike
+  icon: https://raw.githubusercontent.com/TheRetroMike/retromike-umbrel-app-store/master/retro-mike-miningcore-webui/webui.png
+  thumbnail: ""
+  store_app_id: retro-mike-miningcore-webui-legacy
+  title:
+    en_us: Miningcore Web UI
+  category: RetroMike
+  port_map: "81"

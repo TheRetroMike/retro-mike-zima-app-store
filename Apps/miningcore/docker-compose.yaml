@@ -1,0 +1,50 @@
+name: miningcore
+services:
+  main_app:
+    cpu_shares: 10
+    command: []
+    container_name: miningcore
+    deploy:
+      resources:
+        limits:
+          memory: 16508321792
+        reservations:
+          devices: []
+    image: theretromike/miningcore:latest
+    labels:
+      icon: https://raw.githubusercontent.com/oliverw/miningcore/master/logo.png
+    ports:
+      - target: 4000
+        published: "4000"
+        protocol: tcp
+      - target: 6009
+        published: "6009"
+        protocol: tcp
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: /media/DATA/miningcore/coins.json
+        target: /app/build/coins.json
+      - type: bind
+        source: /media/DATA/miningcore/config.json
+        target: /app/config.json
+      - type: bind
+        source: /media/DATA/vtc
+        target: /.vertcoin
+    devices: []
+    cap_add: []
+    environment: []
+    network_mode: bridge
+    privileged: false
+x-casaos:
+  author: Retro Mike
+  category: RetroMike
+  hostname: ""
+  icon: https://raw.githubusercontent.com/oliverw/miningcore/master/logo.png
+  index: /
+  is_uncontrolled: false
+  port_map: "8888"
+  scheme: http
+  store_app_id: miningcore
+  title:
+    custom: Miningcore
