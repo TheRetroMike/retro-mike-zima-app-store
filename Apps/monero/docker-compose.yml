@@ -1,7 +1,14 @@
 name: monero
 services:
-  main_app:
-    cpu_shares: 10
+  app:
+    container_name: xmr
+    image: theretromike/nodes:monero
+    restart: always
+    volumes:
+      - /media/ZimaOS-HD/NodeData/xmr:/root/.bitmonero
+    ports:
+      - "9009:9009"
+      - "7009:7009"
     command:
       - /usr/local/bin/monerod
       - --non-interactive
@@ -12,42 +19,19 @@ services:
       - --rpc-bind-ip=0.0.0.0
       - --rpc-bind-port=9009
       - --prune-blockchain
-    container_name: xmr
-    deploy:
-      resources:
-        limits:
-          memory: 67292020736
-        reservations:
-          devices: []
-    image: theretromike/nodes:monero
-    labels:
-      icon: https://cryptologos.cc/logos/monero-xmr-logo.png
-    ports:
-      - target: 9009
-        published: "9009"
-        protocol: tcp
-      - target: 7009
-        published: "7009"
-        protocol: tcp
-    restart: unless-stopped
-    volumes:
-      - type: bind
-        source: /media/ZimaOS-HD/NodeData/xmr
-        target: /root/.bitmonero
-    devices: []
-    cap_add: []
-    environment: []
-    network_mode: bridge
-    privileged: false
 x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Monero Cryptocurrency Node.
+  tagline:
+    en_us: Monero Cryptocurrency Node
+  developer: Retro Mike
   author: Retro Mike
-  category: RetroMike
-  hostname: ""
   icon: https://cryptologos.cc/logos/monero-xmr-logo.png
-  index: /
-  is_uncontrolled: false
-  port_map: "8888"
-  scheme: http
-  store_app_id: monero
+  thumbnail: ""
   title:
-    custom: Monero (XMR) Node
+    en_us: Monero (XMR) Node
+  category: RetroMike
+  port_map: "8888"
