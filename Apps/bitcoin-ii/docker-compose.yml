@@ -1,0 +1,28 @@
+name: retro-mike-bitcoin-ii
+services:
+  app:
+    container_name: bc2
+    image: theretromike/nodes:bitcoinii
+    restart: always
+    volumes:
+      - /media/ZimaOS-HD/bc2:/root/.bitcoinII
+    ports:
+      - "7006:7006"
+      - "9006:9006"
+    command: "/usr/bin/bitcoinIId -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7006 -rpcbind=0.0.0.0 -rpcport=9006 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
+x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: BitcoinII Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.
+  tagline:
+    en_us: BitcoinII Cryptocurrency Node.
+  developer: Retro Mike
+  author: Retro Mike
+  icon: https://bitcoin-ii.org/logo.png
+  thumbnail: ""
+  title:
+    en_us: BitcoinII (BC2) Node
+  category: RetroMike
+  port_map: "8888"
