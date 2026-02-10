@@ -8,9 +8,8 @@ services:
       # Mounting docker.sock to allow docker management via the container
       - /media/ZimaOS-HD/rvn:/root/.raven
     ports:
-      - "7002:7002"
-      - "9002:9002"
-      - "8334:8334"
+      - "7010:7010"
+      - "9010:9010"
     command: "/usr/bin/ravend -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7010 -rpcbind=0.0.0.0 -rpcport=9010 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
     x-casaos:
       volumes:
