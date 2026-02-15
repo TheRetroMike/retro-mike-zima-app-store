@@ -1,0 +1,28 @@
+name: retro-mike-groestlcoin
+services:
+  app:
+    container_name: grs
+    image: theretromike/nodes:groestlcoin
+    restart: always
+    volumes:
+      - /media/ZimaOS-HD/grs:/root/.groestlcoin
+    ports:
+      - "7013:7013"
+      - "9013:9013"
+    command: "/usr/bin/groestlcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7013 -rpcbind=0.0.0.0 -rpcport=9013 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
+x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Groestlcoin Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.
+  tagline:
+    en_us: Groestlcoin Cryptocurrency Node.
+  developer: Retro Mike
+  author: Retro Mike
+  icon: https://cryptologos.cc/logos/groestlcoin-grs-logo.png
+  thumbnail: ""
+  title:
+    en_us: Groestlcoin (GRS) Node
+  category: RetroMike
+  port_map: "8888"
