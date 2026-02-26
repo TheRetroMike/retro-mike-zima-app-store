@@ -1,7 +1,7 @@
 name: retro-mike-miningcore-webui-legacy
 services:
   app:
-    container_name: miningcorewebui
+    container_name: miningcorewebui_legacy
     image: theretromike/miningcorewebui:latest
     restart: always
     volumes:
@@ -10,7 +10,7 @@ services:
       - "82:8080"
     environment:
       - API_BASE_URL=http://192.168.1.100:4001/api
-      - MININGCORE_HOST=192.168.1.101
+      - MININGCORE_HOST=192.168.1.100
       - PLATFORM=ZIMAOS
       - POOL_NAME=Self-Hosted Mining Pool
       - POSTGRES_DATABASE=zimaos
@@ -35,4 +35,4 @@ x-casaos:
   title:
     en_us: Miningcore Web UI (Legacy)
   category: RetroMike
-  port_map: "81"
+  port_map: "82"
