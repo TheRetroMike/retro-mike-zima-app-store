@@ -11,7 +11,7 @@ services:
     environment:
       - API_BASE_URL=http://192.168.1.100:4001/api
       - MININGCORE_HOST=192.168.1.100
-      - PLATFORM=ZIMAOS
+      - PLATFORM=ZIMAOS_LEGACY
       - POOL_NAME=Self-Hosted Mining Pool
       - POSTGRES_DATABASE=zimaos
       - POSTGRES_HOST=192.168.1.100
