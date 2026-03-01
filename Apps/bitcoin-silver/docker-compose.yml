@@ -1,0 +1,29 @@
+name: retro-mike-bitcoin-silver
+services:
+  app:
+    container_name: btcs
+    image: theretromike/nodes:bitcoinsilver
+    restart: always
+    volumes:
+      # Mounting docker.sock to allow docker management via the container
+      - /media/ZimaOS-HD/btcs:/root/.bitcoinsilver
+    ports:
+      - "7015:7015"
+      - "9015:9015"
+    command: "/usr/bin/bitcoinsilverd -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7015 -rpcbind=0.0.0.0 -rpcport=9015 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
+x-casaos:
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Bitcoin Silver Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.
+  tagline:
+    en_us: Bitcoin Silver Cryptocurrency Node.
+  developer: Retro Mike
+  author: Retro Mike
+  icon: https://avatars.githubusercontent.com/u/185931597?s=200&v=4
+  thumbnail: ""
+  title:
+    en_us: Bitcoin Silver (BTCS) Node
+  category: RetroMike
+  port_map: "8888"
