@@ -1,0 +1,33 @@
+name: repocket
+services:
+  app:
+    container_name: repocket
+    image: repocket/repocket:latest
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - RP_API_KEY=xxx
+      - RP_EMAIL=xxx
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+  main: app
+  description:
+    en_us: RePocket is a bandwidth sharing app that you can run in the background to earn passive income.
+  tagline:
+    en_us: RePocket is a bandwidth sharing app that you can run in the background to earn passive income.
+  developer: repocket
+  author: Retro Mike
+  icon: https://cdn.aptoide.com/imgs/5/1/a/51ad763db44dd5951a9b702eb584d103_icon.png
+  thumbnail: ""
+  # Title for the application
+  title:
+    en_us: RePocket
+  category: RetroMike
+  hostname: "repocket.com"
+  index: /dashboard/share-internet
+  is_uncontrolled: false
+  port_map: ""
+  scheme: https
