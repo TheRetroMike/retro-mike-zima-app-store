@@ -1,0 +1,26 @@
+name: watchtower
+services:
+  app:
+    container_name: watchtower
+    image: nickfedor/watchtower:latest
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+  main: app
+  description:
+    en_us: Watchtower is a process for automating Docker container base image updates.
+  tagline:
+    en_us: Watchtower is a process for automating Docker container base image updates.
+  developer: nickfedor
+  author: Retro Mike
+  icon: https://raw.githubusercontent.com/containrrr/watchtower/main/logo.png
+  thumbnail: ""
+  # Title for the application
+  title:
+    en_us: Watchtower
+  category: RetroMike
+  port_map: "8888"
