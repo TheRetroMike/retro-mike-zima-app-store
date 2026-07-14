@@ -1,0 +1,32 @@
+name: homepage
+services:
+  app:
+    container_name: homepage
+    image: ghcr.io/gethomepage/homepage:latest
+    restart: unless-stopped
+    volumes:
+      - /media/DATA/AppData/homepage:/app/config
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - HOMEPAGE_ALLOWED_HOSTS=xxx:3000
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+  main: app
+  description:
+    en_us: A modern, fully static, fast, secure fully proxied, highly customizable
+      application dashboard with integrations for over 100 services and
+      translations into multiple languages. Easily configured via YAML files or
+      through docker label discovery.
+  tagline:
+    en_us: Homepage
+  developer: gethomepage
+  author: Retro Mike
+  icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/homepage.png
+  thumbnail: ""
+  title:
+    en_us: Homepage
+  category: RetroMike
+  port_map: "3000"
+  scheme: http
