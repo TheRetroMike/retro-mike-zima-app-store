@@ -22,7 +22,7 @@ services:
 x-casaos:
   id: com.retromike.miningcore-webui
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.miningcore-webui/assets/icon.png
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.miningcore-webui/assets/icon.png
   title:
     en_US: Miningcore Web UI
   port_map: '81'

@@ -11,7 +11,7 @@ services:
 x-casaos:
   id: com.retromike.dozzle
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.dozzle/assets/icon.png
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.dozzle/assets/icon.png
   title:
     en_US: Dozzle
   port_map: '8888'

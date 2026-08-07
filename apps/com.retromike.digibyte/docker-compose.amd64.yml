@@ -16,7 +16,7 @@ services:
 x-casaos:
   id: com.retromike.digibyte
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.digibyte/assets/icon.png
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.digibyte/assets/icon.png
   title:
     en_US: Digibyte (DGB) Node
   port_map: '8888'

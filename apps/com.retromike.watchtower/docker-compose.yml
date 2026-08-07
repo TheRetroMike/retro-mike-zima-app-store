@@ -9,7 +9,7 @@ services:
 x-casaos:
   id: com.retromike.watchtower
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.watchtower/assets/icon.png
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.watchtower/assets/icon.png
   title:
     en_US: Watchtower
   port_map: '8888'

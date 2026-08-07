@@ -24,7 +24,7 @@ services:
 x-casaos:
   id: com.retromike.neurai
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.neurai/assets/icon.png
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.neurai/assets/icon.png
   title:
     en_US: NeurAI (XNA) Node
   port_map: '8888'

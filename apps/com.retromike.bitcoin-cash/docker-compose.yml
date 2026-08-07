@@ -16,7 +16,7 @@ services:
 x-casaos:
   id: com.retromike.bitcoin-cash
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.bitcoin-cash/assets/icon.svg
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.bitcoin-cash/assets/icon.svg
   title:
     en_US: Bitcoin Cash (BCH) Node
   port_map: '8888'

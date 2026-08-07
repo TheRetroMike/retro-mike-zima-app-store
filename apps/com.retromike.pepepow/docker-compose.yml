@@ -14,7 +14,7 @@ services:
 x-casaos:
   id: com.retromike.pepepow
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.pepepow/assets/icon
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.pepepow/assets/icon
   title:
     en_US: PepePOW (PEPEW) Node
   port_map: '8888'

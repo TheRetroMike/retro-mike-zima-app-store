@@ -15,7 +15,7 @@ services:
 x-casaos:
   id: com.retromike.bitcoin-silver
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.bitcoin-silver/assets/icon
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.bitcoin-silver/assets/icon
   title:
     en_US: Bitcoin Silver (BTCS) Node
   port_map: '8888'

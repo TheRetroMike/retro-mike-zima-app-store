@@ -17,7 +17,7 @@ services:
 x-casaos:
   id: com.retromike.miningcore_legacy
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.miningcore_legacy/assets/icon.png
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.miningcore_legacy/assets/icon.png
   title:
     en_US: Miningcore (Legacy)
   port_map: '8888'

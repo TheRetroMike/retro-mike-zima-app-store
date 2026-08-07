@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "updated_at": "2026-08-07T14:00:42Z",
+  "updated_at": "2026-08-07T14:13:14Z",
   "app_count": 23,
-  "base_url": "https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages",
+  "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
   "apps": [
     {
       "id": "com.retromike.bitcoin",
@@ -21,7 +21,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.bitcoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.bitcoin/meta.json",
-      "content_hash": "0043844a"
+      "content_hash": "4a975e04"
     },
     {
       "id": "com.retromike.bitcoin-cash",
@@ -40,7 +40,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.bitcoin-cash/docker-compose.yml",
       "meta_url": "/apps/com.retromike.bitcoin-cash/meta.json",
-      "content_hash": "085e73d6"
+      "content_hash": "8306acb0"
     },
     {
       "id": "com.retromike.bitcoin-ii",
@@ -59,7 +59,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.bitcoin-ii/docker-compose.yml",
       "meta_url": "/apps/com.retromike.bitcoin-ii/meta.json",
-      "content_hash": "bcbc811f"
+      "content_hash": "4448a6db"
     },
     {
       "id": "com.retromike.bitcoin-silver",
@@ -78,7 +78,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.bitcoin-silver/docker-compose.yml",
       "meta_url": "/apps/com.retromike.bitcoin-silver/meta.json",
-      "content_hash": "def43f99"
+      "content_hash": "9fed28ed"
     },
     {
       "id": "com.retromike.digibyte",
@@ -97,7 +97,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.digibyte/docker-compose.yml",
       "meta_url": "/apps/com.retromike.digibyte/meta.json",
-      "content_hash": "d3169bd4"
+      "content_hash": "c7e1f3a3"
     },
     {
       "id": "com.retromike.dogecoin",
@@ -116,7 +116,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.dogecoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.dogecoin/meta.json",
-      "content_hash": "8cdd174b"
+      "content_hash": "81a8d7c0"
     },
     {
       "id": "com.retromike.dozzle",
@@ -136,7 +136,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.dozzle/docker-compose.yml",
       "meta_url": "/apps/com.retromike.dozzle/meta.json",
-      "content_hash": "3eadf4ba"
+      "content_hash": "19f9cc45"
     },
     {
       "id": "com.retromike.groestlcoin",
@@ -155,7 +155,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.groestlcoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.groestlcoin/meta.json",
-      "content_hash": "abda2a7f"
+      "content_hash": "f67b516d"
     },
     {
       "id": "com.retromike.homepage",
@@ -175,7 +175,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.homepage/docker-compose.yml",
       "meta_url": "/apps/com.retromike.homepage/meta.json",
-      "content_hash": "2041ad30"
+      "content_hash": "9ab0572f"
     },
     {
       "id": "com.retromike.miningcore",
@@ -194,7 +194,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.miningcore/docker-compose.yml",
       "meta_url": "/apps/com.retromike.miningcore/meta.json",
-      "content_hash": "edf2a7da"
+      "content_hash": "30bcbfd9"
     },
     {
       "id": "com.retromike.miningcore-webui",
@@ -213,7 +213,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.miningcore-webui/docker-compose.yml",
       "meta_url": "/apps/com.retromike.miningcore-webui/meta.json",
-      "content_hash": "82c18724"
+      "content_hash": "ec72a3cb"
     },
     {
       "id": "com.retromike.miningcore-webui-legacy",
@@ -232,7 +232,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.miningcore-webui-legacy/docker-compose.yml",
       "meta_url": "/apps/com.retromike.miningcore-webui-legacy/meta.json",
-      "content_hash": "23a7ac4b"
+      "content_hash": "45f81ad3"
     },
     {
       "id": "com.retromike.miningcore_legacy",
@@ -251,7 +251,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.miningcore_legacy/docker-compose.yml",
       "meta_url": "/apps/com.retromike.miningcore_legacy/meta.json",
-      "content_hash": "e36bef1b"
+      "content_hash": "c1b2fe08"
     },
     {
       "id": "com.retromike.monero",
@@ -270,7 +270,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.monero/docker-compose.yml",
       "meta_url": "/apps/com.retromike.monero/meta.json",
-      "content_hash": "9df2a14d"
+      "content_hash": "095e15b3"
     },
     {
       "id": "com.retromike.monerowallet",
@@ -289,7 +289,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.monerowallet/docker-compose.yml",
       "meta_url": "/apps/com.retromike.monerowallet/meta.json",
-      "content_hash": "6336b4eb"
+      "content_hash": "d159209f"
     },
     {
       "id": "com.retromike.neurai",
@@ -308,7 +308,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.neurai/docker-compose.yml",
       "meta_url": "/apps/com.retromike.neurai/meta.json",
-      "content_hash": "9cdca1db"
+      "content_hash": "50b1afcb"
     },
     {
       "id": "com.retromike.nitocoin",
@@ -327,7 +327,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.nitocoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.nitocoin/meta.json",
-      "content_hash": "dd3c950f"
+      "content_hash": "3c3d2bed"
     },
     {
       "id": "com.retromike.pepepow",
@@ -346,7 +346,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.pepepow/docker-compose.yml",
       "meta_url": "/apps/com.retromike.pepepow/meta.json",
-      "content_hash": "8cad8799"
+      "content_hash": "b5ff8482"
     },
     {
       "id": "com.retromike.postgresql",
@@ -367,7 +367,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.postgresql/docker-compose.yml",
       "meta_url": "/apps/com.retromike.postgresql/meta.json",
-      "content_hash": "aa21e569"
+      "content_hash": "09d16509"
     },
     {
       "id": "com.retromike.ravencoin",
@@ -386,7 +386,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.ravencoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.ravencoin/meta.json",
-      "content_hash": "ebf271d9"
+      "content_hash": "dcc90bd5"
     },
     {
       "id": "com.retromike.repocket",
@@ -406,7 +406,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.repocket/docker-compose.yml",
       "meta_url": "/apps/com.retromike.repocket/meta.json",
-      "content_hash": "fb3c9d20"
+      "content_hash": "92c9bc2a"
     },
     {
       "id": "com.retromike.watchtower",
@@ -426,7 +426,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.watchtower/docker-compose.yml",
       "meta_url": "/apps/com.retromike.watchtower/meta.json",
-      "content_hash": "df2fdfb8"
+      "content_hash": "964b065d"
     },
     {
       "id": "com.retromike.wojakcoin",
@@ -445,7 +445,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.wojakcoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.wojakcoin/meta.json",
-      "content_hash": "9aa4bdbd"
+      "content_hash": "28df3d5b"
     }
   ]
 }

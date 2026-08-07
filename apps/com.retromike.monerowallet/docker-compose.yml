@@ -22,7 +22,7 @@ services:
 x-casaos:
   id: com.retromike.monerowallet
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.monerowallet/assets/icon.png
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.monerowallet/assets/icon.png
   title:
     en_US: Monero (XMR) Wallet
   port_map: '8888'

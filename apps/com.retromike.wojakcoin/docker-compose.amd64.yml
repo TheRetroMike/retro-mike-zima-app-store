@@ -15,7 +15,7 @@ services:
 x-casaos:
   id: com.retromike.wojakcoin
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.wojakcoin/assets/icon.webp
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.wojakcoin/assets/icon.webp
   title:
     en_US: Wojakcoin (WJK) Node
   port_map: '8888'

@@ -14,7 +14,7 @@ services:
 x-casaos:
   id: com.retromike.nitocoin
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.nitocoin/assets/icon.webp
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.nitocoin/assets/icon.webp
   title:
     en_US: Nitcoin (NITO) Cryptocurrency Node
   port_map: '8888'

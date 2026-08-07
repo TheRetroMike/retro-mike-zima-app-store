@@ -12,7 +12,7 @@ services:
 x-casaos:
   id: com.retromike.repocket
   main: app
-  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.repocket/assets/icon.png
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.repocket/assets/icon.png
   title:
     en_US: RePocket
   index: /dashboard/share-internet
