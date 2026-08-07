@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "store_id": "retro-mike-zima-app-store",
+  "name": "Retro Mike ZimaOS App Store",
+  "description": "Community-maintained apps for ZimaOS by Retro Mike",
+  "maintainer": "RetroMike",
+  "url": "https://github.com/TheRetroMike/retro-mike-zima-app-store"
+}
