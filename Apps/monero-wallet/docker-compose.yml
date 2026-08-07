@@ -20,6 +20,7 @@ services:
       - --disable-rpc-login
       - --log-level=1
 x-casaos:
+  id: monerowallet
   architectures:
     - amd64
   main: app

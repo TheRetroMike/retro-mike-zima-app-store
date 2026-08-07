@@ -16,6 +16,7 @@ services:
       - PUID=1000
       - TZ=America/Chicago
 x-casaos:
+  id: retro-mike-postgresql
   architectures:
     - amd64
     - arm

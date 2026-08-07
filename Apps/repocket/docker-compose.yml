@@ -10,6 +10,7 @@ services:
       - RP_API_KEY=xxx
       - RP_EMAIL=xxx
 x-casaos:
+  id: repocket
   architectures:
     - amd64
     - arm64

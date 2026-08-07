@@ -29,6 +29,7 @@ services:
           description:
             en_us: 'Container Port: 12024'
 x-casaos:
+  id: retro-mike-digibyte
   architectures:
     - amd64
   main: app

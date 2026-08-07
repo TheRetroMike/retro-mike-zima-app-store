@@ -22,6 +22,7 @@ services:
       - -rpcuser=pooluser
       - -rpcpassword=poolpassword
 x-casaos:
+  id: neurai
   architectures:
     - amd64
   main: app

@@ -31,7 +31,7 @@ services:
           description:
             en_us: 'Container Port: 8080'
 x-casaos:
-  # Supported CPU architectures for this application
+  id: dozzle
   architectures:
     - amd64
     - arm64
