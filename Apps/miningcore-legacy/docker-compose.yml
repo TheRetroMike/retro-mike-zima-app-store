@@ -15,7 +15,7 @@ services:
       - "6601-6625:6601-6625"
       - "6701-6725:6701-6725"
 x-casaos:
-  id: miningcore_legacy
+  id: com.retromike.miningcore_legacy
   architectures:
     - amd64
   main: app

@@ -20,7 +20,7 @@ services:
       - PUID=1000
       - STRATUM_HOST=192.168.1.100
 x-casaos:
-  id: retro-mike-miningcore-webui-legacy
+  id: com.retromike.miningcore-webui-legacy
   architectures:
     - amd64
   main: app

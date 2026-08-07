@@ -11,7 +11,7 @@ services:
       - "9020:9020"
     command: "/usr/bin/nitod -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7020 -rpcbind=0.0.0.0 -rpcport=9020 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
 x-casaos:
-  id: retro-mike-nitocoin
+  id: com.retromike.nitocoin
   architectures:
     - amd64
   main: app

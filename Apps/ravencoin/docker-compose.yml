@@ -24,7 +24,7 @@ services:
           description:
             en_us: 'Container Port: 9010'
 x-casaos:
-  id: retro-mike-ravencoin
+  id: com.retromike.ravencoin
   architectures:
     - amd64
   main: app

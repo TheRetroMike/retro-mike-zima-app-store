@@ -10,7 +10,7 @@ services:
     environment:
       - HOMEPAGE_ALLOWED_HOSTS=xxx:3000
 x-casaos:
-  id: homepage
+  id: com.retromike.homepage
   architectures:
     - amd64
     - arm64

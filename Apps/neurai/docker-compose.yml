@@ -22,7 +22,7 @@ services:
       - -rpcuser=pooluser
       - -rpcpassword=poolpassword
 x-casaos:
-  id: neurai
+  id: com.retromike.neurai
   architectures:
     - amd64
   main: app

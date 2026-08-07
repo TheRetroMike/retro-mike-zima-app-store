@@ -11,7 +11,7 @@ services:
       - "9014:9014"
     command: "/app/PEPEPOWd -printtoconsole -server -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7014 -rpcbind=0.0.0.0 -rpcport=9014 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
 x-casaos:
-  id: retro-mike-pepepow
+  id: com.retromike.pepepow
   architectures:
     - amd64
   main: app

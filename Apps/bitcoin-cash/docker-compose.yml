@@ -28,7 +28,7 @@ services:
           description:
             en_us: 'Container Port: 8334'
 x-casaos:
-  id: retro-mike-bitcoin-cash
+  id: com.retromike.bitcoin-cash
   architectures:
     - amd64
   main: app

@@ -11,7 +11,7 @@ services:
       - "9017:9017"
     command: "/usr/bin/wojakcoind -printtoconsole -server -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7017 -rpcbind=0.0.0.0 -rpcport=9017 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
 x-casaos:
-  id: retro-mike-wojakcoin
+  id: com.retromike.wojakcoin
   architectures:
     - amd64
   main: app

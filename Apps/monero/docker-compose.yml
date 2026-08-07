@@ -20,7 +20,7 @@ services:
       - --rpc-bind-port=9009
       - --prune-blockchain
 x-casaos:
-  id: monero
+  id: com.retromike.monero
   architectures:
     - amd64
   main: app

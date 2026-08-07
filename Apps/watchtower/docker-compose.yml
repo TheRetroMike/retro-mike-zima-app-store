@@ -7,7 +7,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 x-casaos:
-  id: watchtower
+  id: com.retromike.watchtower
   architectures:
     - amd64
     - arm64
