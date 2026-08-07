@@ -1,0 +1,20 @@
+name: repocket
+services:
+  app:
+    container_name: repocket
+    image: repocket/repocket:latest
+    restart: unless-stopped
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+    - RP_API_KEY=xxx
+    - RP_EMAIL=xxx
+x-casaos:
+  id: com.retromike.repocket
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.repocket/assets/icon.png
+  title:
+    en_US: RePocket
+  index: /dashboard/share-internet
+  port_map: ''
+  scheme: https

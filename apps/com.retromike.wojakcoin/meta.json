@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "Wojakcoin Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.",
+  "tagline": "Wojakcoin Cryptocurrency Node.",
+  "developer": "Retro Mike",
+  "author": "Retro Mike",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "title": "Wojakcoin (WJK) Node",
+  "base_url": "https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages",
+  "id": "com.retromike.wojakcoin",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 93923347
+  }
+}

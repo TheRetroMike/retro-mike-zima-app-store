@@ -1,0 +1,21 @@
+name: dogecoin
+services:
+  app:
+    container_name: doge
+    image: theretromike/nodes:dogecoin
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/NodeData/doge:/root/.dogecoin
+    ports:
+    - 7003:7003
+    - 9003:9003
+    command: /usr/bin/dogecoind -printtoconsole -server -prune=2200 -wallet=default
+      -zmqpubhashblock=tcp://127.0.0.1:7003 -rpcbind=0.0.0.0 -rpcport=9003 -rpcallowip=0.0.0.0/0
+      -rpcuser=pooluser -rpcpassword=poolpassword
+x-casaos:
+  id: com.retromike.dogecoin
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.dogecoin/assets/icon.png
+  title:
+    en_US: Dogecoin (DOGE) Node
+  port_map: '8888'

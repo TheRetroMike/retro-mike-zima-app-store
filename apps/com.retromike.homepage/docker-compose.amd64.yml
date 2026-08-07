@@ -1,0 +1,19 @@
+name: homepage
+services:
+  app:
+    container_name: homepage
+    image: ghcr.io/gethomepage/homepage:latest@sha256:c881120b024d6a8e2f3c9664efc568984e4352e47df459d6b32e225374c71955
+    restart: unless-stopped
+    volumes:
+    - /media/DATA/AppData/homepage:/app/config
+    - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+    - HOMEPAGE_ALLOWED_HOSTS=xxx:3000
+x-casaos:
+  id: com.retromike.homepage
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.homepage/assets/icon.png
+  title:
+    en_US: Homepage
+  port_map: '3000'
+  scheme: http

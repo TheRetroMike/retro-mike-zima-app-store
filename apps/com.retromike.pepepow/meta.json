@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "PepePOW Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.",
+  "tagline": "PepePOW Cryptocurrency Node.",
+  "developer": "Retro Mike",
+  "author": "Retro Mike",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "title": "PepePOW (PEPEW) Node",
+  "base_url": "https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages",
+  "id": "com.retromike.pepepow",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 461567112
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "Monero Cryptocurrency Wallet",
+  "tagline": "Monero Cryptocurrency Wallet",
+  "developer": "Retro Mike",
+  "author": "Retro Mike",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "title": "Monero (XMR) Wallet",
+  "base_url": "https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages",
+  "id": "com.retromike.monerowallet",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 136628519
+  }
+}

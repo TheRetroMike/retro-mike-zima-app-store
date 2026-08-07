@@ -1,0 +1,20 @@
+name: retro-mike-pepepow
+services:
+  app:
+    container_name: pepew
+    image: theretromike/nodes:pepew
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/pepew:/root/.PEPEPOWcore
+    ports:
+    - 7014:7014
+    - 9014:9014
+    command: /app/PEPEPOWd -printtoconsole -server -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7014
+      -rpcbind=0.0.0.0 -rpcport=9014 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword
+x-casaos:
+  id: com.retromike.pepepow
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.pepepow/assets/icon
+  title:
+    en_US: PepePOW (PEPEW) Node
+  port_map: '8888'

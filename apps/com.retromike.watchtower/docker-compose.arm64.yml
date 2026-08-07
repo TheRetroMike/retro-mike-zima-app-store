@@ -1,0 +1,15 @@
+name: watchtower
+services:
+  app:
+    container_name: watchtower
+    image: nickfedor/watchtower:latest@sha256:066c7287449dc05e7212e07d6e59a4393cb3ef51ad61733e0611e0c23d55ebc2
+    restart: unless-stopped
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+x-casaos:
+  id: com.retromike.watchtower
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.watchtower/assets/icon.png
+  title:
+    en_US: Watchtower
+  port_map: '8888'

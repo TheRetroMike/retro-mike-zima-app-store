@@ -1,0 +1,23 @@
+name: miningcore
+services:
+  app:
+    container_name: miningcore
+    image: theretromike/miningcore:latest@sha256:ef1047a33a8669feffc3748542bde39bc0aa5ca49c06aaa2649f9d581ee2bc9d
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/miningcore/coins.json:/app/build/coins.json
+    - /media/ZimaOS-HD/miningcore/config.json:/app/config.json
+    - /media/ZimaOS-HD/vtc:/.vertcoin
+    ports:
+    - 4000:4000
+    - 6001-6025:6001-6025
+    - 6201-6225:6201-6225
+    - 6301-6325:6301-6325
+    - 6401-6425:6401-6425
+x-casaos:
+  id: com.retromike.miningcore
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.miningcore/assets/icon.png
+  title:
+    en_US: Miningcore
+  port_map: '8888'

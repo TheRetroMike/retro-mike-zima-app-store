@@ -1,0 +1,24 @@
+name: retro-mike-postgresql
+services:
+  app:
+    container_name: postgresql
+    image: postgres:17.4@sha256:29662333747b3d73efbdd63bd07c8dcf2cf0664f7853c0623b344429a3aa659e
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/postgres:/var/lib/postgresql/data
+    ports:
+    - 5432:5432
+    environment:
+    - PGID=1000
+    - POSTGRES_DB=zimaos
+    - POSTGRES_PASSWORD=P@ssw0rd
+    - POSTGRES_USER=admin
+    - PUID=1000
+    - TZ=America/Chicago
+x-casaos:
+  id: com.retromike.postgresql
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.postgresql/assets/icon.png
+  title:
+    en_US: Postgresql
+  port_map: '8888'

@@ -1,0 +1,451 @@
+{
+  "version": 2,
+  "updated_at": "2026-08-07T02:34:03Z",
+  "app_count": 23,
+  "base_url": "https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages",
+  "apps": [
+    {
+      "id": "com.retromike.bitcoin",
+      "title": "Bitcoin (BTC) Node",
+      "tagline": "Bitcoin Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.bitcoin/assets/icon.webp",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.bitcoin/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.bitcoin/meta.json",
+      "content_hash": "0043844a"
+    },
+    {
+      "id": "com.retromike.bitcoin-cash",
+      "title": "Bitcoin Cash (BCH) Node",
+      "tagline": "Bitcoin Cash Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.bitcoin-cash/assets/icon.svg",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.bitcoin-cash/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.bitcoin-cash/meta.json",
+      "content_hash": "085e73d6"
+    },
+    {
+      "id": "com.retromike.bitcoin-ii",
+      "title": "BitcoinII (BC2) Node",
+      "tagline": "BitcoinII Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.bitcoin-ii/assets/icon.webp",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.bitcoin-ii/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.bitcoin-ii/meta.json",
+      "content_hash": "bcbc811f"
+    },
+    {
+      "id": "com.retromike.bitcoin-silver",
+      "title": "Bitcoin Silver (BTCS) Node",
+      "tagline": "Bitcoin Silver Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.bitcoin-silver/assets/icon",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.bitcoin-silver/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.bitcoin-silver/meta.json",
+      "content_hash": "def43f99"
+    },
+    {
+      "id": "com.retromike.digibyte",
+      "title": "Digibyte (DGB) Node",
+      "tagline": "Digibyte Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.digibyte/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.digibyte/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.digibyte/meta.json",
+      "content_hash": "d3169bd4"
+    },
+    {
+      "id": "com.retromike.dogecoin",
+      "title": "Dogecoin (DOGE) Node",
+      "tagline": "Dogecoin Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.dogecoin/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.dogecoin/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.dogecoin/meta.json",
+      "content_hash": "8cdd174b"
+    },
+    {
+      "id": "com.retromike.dozzle",
+      "title": "Dozzle",
+      "tagline": "Dozzle is a real-time log viewer for docker containers.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "BigBearTechWorld",
+      "developer": "amir20",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/com.retromike.dozzle/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.dozzle/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.dozzle/meta.json",
+      "content_hash": "3eadf4ba"
+    },
+    {
+      "id": "com.retromike.groestlcoin",
+      "title": "Groestlcoin (GRS) Node",
+      "tagline": "Groestlcoin Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.groestlcoin/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.groestlcoin/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.groestlcoin/meta.json",
+      "content_hash": "abda2a7f"
+    },
+    {
+      "id": "com.retromike.homepage",
+      "title": "Homepage",
+      "tagline": "Homepage",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "gethomepage",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/com.retromike.homepage/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.homepage/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.homepage/meta.json",
+      "content_hash": "2041ad30"
+    },
+    {
+      "id": "com.retromike.miningcore",
+      "title": "Miningcore",
+      "tagline": "Miningcore Mining Pool App.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.miningcore/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.miningcore/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.miningcore/meta.json",
+      "content_hash": "edf2a7da"
+    },
+    {
+      "id": "com.retromike.miningcore-webui",
+      "title": "Miningcore Web UI",
+      "tagline": "Miningcore Web UI",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.miningcore-webui/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.miningcore-webui/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.miningcore-webui/meta.json",
+      "content_hash": "82c18724"
+    },
+    {
+      "id": "com.retromike.miningcore-webui-legacy",
+      "title": "Miningcore Web UI (Legacy)",
+      "tagline": "Miningcore Web UI (Legacy)",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.miningcore-webui-legacy/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.miningcore-webui-legacy/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.miningcore-webui-legacy/meta.json",
+      "content_hash": "23a7ac4b"
+    },
+    {
+      "id": "com.retromike.miningcore_legacy",
+      "title": "Miningcore (Legacy)",
+      "tagline": "Miningcore Mining Pool App.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.miningcore_legacy/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.miningcore_legacy/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.miningcore_legacy/meta.json",
+      "content_hash": "e36bef1b"
+    },
+    {
+      "id": "com.retromike.monero",
+      "title": "Monero (XMR) Node",
+      "tagline": "Monero Cryptocurrency Node",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.monero/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.monero/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.monero/meta.json",
+      "content_hash": "9df2a14d"
+    },
+    {
+      "id": "com.retromike.monerowallet",
+      "title": "Monero (XMR) Wallet",
+      "tagline": "Monero Cryptocurrency Wallet",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.monerowallet/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.monerowallet/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.monerowallet/meta.json",
+      "content_hash": "6336b4eb"
+    },
+    {
+      "id": "com.retromike.neurai",
+      "title": "NeurAI (XNA) Node",
+      "tagline": "Neurai Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.neurai/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.neurai/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.neurai/meta.json",
+      "content_hash": "9cdca1db"
+    },
+    {
+      "id": "com.retromike.nitocoin",
+      "title": "Nitcoin (NITO) Cryptocurrency Node",
+      "tagline": "Nitcoin (NITO) Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.nitocoin/assets/icon.webp",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.nitocoin/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.nitocoin/meta.json",
+      "content_hash": "dd3c950f"
+    },
+    {
+      "id": "com.retromike.pepepow",
+      "title": "PepePOW (PEPEW) Node",
+      "tagline": "PepePOW Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.pepepow/assets/icon",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.pepepow/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.pepepow/meta.json",
+      "content_hash": "8cad8799"
+    },
+    {
+      "id": "com.retromike.postgresql",
+      "title": "Postgresql",
+      "tagline": "Postgresql Database Engine",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64",
+        "arm",
+        "arm64"
+      ],
+      "icon": "/apps/com.retromike.postgresql/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.postgresql/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.postgresql/meta.json",
+      "content_hash": "aa21e569"
+    },
+    {
+      "id": "com.retromike.ravencoin",
+      "title": "Ravencoin (RVN) Node",
+      "tagline": "Ravencoin Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.ravencoin/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.ravencoin/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.ravencoin/meta.json",
+      "content_hash": "ebf271d9"
+    },
+    {
+      "id": "com.retromike.repocket",
+      "title": "RePocket",
+      "tagline": "RePocket is a bandwidth sharing app that you can run in the background to earn passive income.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "repocket",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/com.retromike.repocket/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.repocket/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.repocket/meta.json",
+      "content_hash": "fb3c9d20"
+    },
+    {
+      "id": "com.retromike.watchtower",
+      "title": "Watchtower",
+      "tagline": "Watchtower is a process for automating Docker container base image updates.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "nickfedor",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/com.retromike.watchtower/assets/icon.png",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.watchtower/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.watchtower/meta.json",
+      "content_hash": "df2fdfb8"
+    },
+    {
+      "id": "com.retromike.wojakcoin",
+      "title": "Wojakcoin (WJK) Node",
+      "tagline": "Wojakcoin Cryptocurrency Node.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.wojakcoin/assets/icon.webp",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.wojakcoin/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.wojakcoin/meta.json",
+      "content_hash": "9aa4bdbd"
+    }
+  ]
+}

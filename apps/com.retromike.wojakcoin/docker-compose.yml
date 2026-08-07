@@ -1,0 +1,21 @@
+name: retro-mike-wojakcoin
+services:
+  app:
+    container_name: wjk
+    image: theretromike/nodes:wojak
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/wjk:/root/.wojakcoin
+    ports:
+    - 7017:7017
+    - 9017:9017
+    command: /usr/bin/wojakcoind -printtoconsole -server -prune=550 -wallet=default
+      -zmqpubhashblock=tcp://127.0.0.1:7017 -rpcbind=0.0.0.0 -rpcport=9017 -rpcallowip=0.0.0.0/0
+      -rpcuser=pooluser -rpcpassword=poolpassword
+x-casaos:
+  id: com.retromike.wojakcoin
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.wojakcoin/assets/icon.webp
+  title:
+    en_US: Wojakcoin (WJK) Node
+  port_map: '8888'

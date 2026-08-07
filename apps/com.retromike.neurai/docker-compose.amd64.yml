@@ -1,0 +1,30 @@
+name: neurai
+services:
+  app:
+    container_name: xna
+    image: theretromike/nodes:neurai@sha256:48cd5b50f8b9f67aad9bd07ee65b5d60326a4b73c2177d18a11505c6819df69a
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/NodeData/xna:/root/.neurai
+    ports:
+    - 7011:7011
+    - 9011:9011
+    command:
+    - /usr/bin/neuraid
+    - -printtoconsole
+    - -server
+    - -prune=550
+    - -wallet=default
+    - -zmqpubhashblock=tcp://0.0.0.0:7011
+    - -rpcbind=0.0.0.0
+    - -rpcport=9011
+    - -rpcallowip=0.0.0.0/0
+    - -rpcuser=pooluser
+    - -rpcpassword=poolpassword
+x-casaos:
+  id: com.retromike.neurai
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.neurai/assets/icon.png
+  title:
+    en_US: NeurAI (XNA) Node
+  port_map: '8888'

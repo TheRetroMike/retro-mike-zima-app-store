@@ -1,0 +1,26 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "RePocket is a bandwidth sharing app that you can run in the background to earn passive income.",
+  "tagline": "RePocket is a bandwidth sharing app that you can run in the background to earn passive income.",
+  "developer": "repocket",
+  "author": "Retro Mike",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "hostname": "repocket.com",
+  "is_uncontrolled": false,
+  "title": "RePocket",
+  "base_url": "https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages",
+  "id": "com.retromike.repocket",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 46084463,
+    "arm64": 45921455
+  }
+}

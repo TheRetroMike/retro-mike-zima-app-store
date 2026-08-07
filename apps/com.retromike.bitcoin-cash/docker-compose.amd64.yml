@@ -1,0 +1,22 @@
+name: retro-mike-bitcoin-cash
+services:
+  app:
+    container_name: bch
+    image: theretromike/nodes:bitcoincash@sha256:06914ea371daa2f11b38fae4d100d6dcfb825374dcea644e8a92fda8fb6691e8
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/NodeData/bch:/root/.bitcoin
+    ports:
+    - 7002:7002
+    - 9002:9002
+    - 8334:8334
+    command: /usr/bin/bitcoind -printtoconsole -server -prune=550 -wallet=default
+      -zmqpubhashblock=tcp://127.0.0.1:7002 -rpcbind=0.0.0.0 -rpcport=9002 -rpcallowip=0.0.0.0/0
+      -port=8334 -rpcuser=pooluser -rpcpassword=poolpassword
+x-casaos:
+  id: com.retromike.bitcoin-cash
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.bitcoin-cash/assets/icon.svg
+  title:
+    en_US: Bitcoin Cash (BCH) Node
+  port_map: '8888'

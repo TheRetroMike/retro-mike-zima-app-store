@@ -1,0 +1,24 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Dozzle is a real-time log viewer for docker containers.",
+  "tagline": "Dozzle is a real-time log viewer for docker containers.",
+  "developer": "amir20",
+  "author": "BigBearTechWorld",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "title": "Dozzle",
+  "base_url": "https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages",
+  "id": "com.retromike.dozzle",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 16940502,
+    "arm64": 15187527
+  }
+}

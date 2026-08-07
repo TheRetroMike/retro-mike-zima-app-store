@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "Bitcoin Cash Cryptocurrency Node. Can be used in conjunction with Miningcore Apps to solo mine.",
+  "tagline": "Bitcoin Cash Cryptocurrency Node.",
+  "developer": "Retro Mike",
+  "author": "Retro Mike",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "title": "Bitcoin Cash (BCH) Node",
+  "base_url": "https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages",
+  "id": "com.retromike.bitcoin-cash",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 1810884335
+  }
+}

@@ -1,0 +1,17 @@
+name: dozzle
+services:
+  app:
+    container_name: dozzle
+    image: amir20/dozzle:v9.0.2
+    restart: unless-stopped
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+    - 8888:8080
+x-casaos:
+  id: com.retromike.dozzle
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.dozzle/assets/icon.png
+  title:
+    en_US: Dozzle
+  port_map: '8888'

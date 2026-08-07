@@ -1,0 +1,28 @@
+name: monero
+services:
+  app:
+    container_name: xmr
+    image: theretromike/nodes:monero@sha256:1b260b686b3abc75424dc44c282db1acadfb48cbac73b90d994c92b390a50796
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/NodeData/xmr:/root/.bitmonero
+    ports:
+    - 9009:9009
+    - 7009:7009
+    command:
+    - /usr/local/bin/monerod
+    - --non-interactive
+    - --confirm-external-bind
+    - --out-peers=32
+    - --p2p-bind-ip=0.0.0.0
+    - --p2p-bind-port=18080
+    - --rpc-bind-ip=0.0.0.0
+    - --rpc-bind-port=9009
+    - --prune-blockchain
+x-casaos:
+  id: com.retromike.monero
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.monero/assets/icon.png
+  title:
+    en_US: Monero (XMR) Node
+  port_map: '8888'

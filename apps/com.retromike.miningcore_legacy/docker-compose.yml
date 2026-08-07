@@ -1,0 +1,23 @@
+name: miningcore_legacy
+services:
+  app:
+    container_name: miningcore_legacy
+    image: theretromike/miningcore:legacy
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/miningcore_legacy/coins.json:/app/build/coins.json
+    - /media/ZimaOS-HD/miningcore_legacy/config.json:/app/config.json
+    - /media/ZimaOS-HD/vtc:/.vertcoin
+    ports:
+    - 4001:4001
+    - 6101-6125:6101-6125
+    - 6501-6525:6501-6525
+    - 6601-6625:6601-6625
+    - 6701-6725:6701-6725
+x-casaos:
+  id: com.retromike.miningcore_legacy
+  main: app
+  icon: https://cdn.jsdelivr.net/gh/jerrykuku/ZimaOS-AppStore@gh-pages/apps/com.retromike.miningcore_legacy/assets/icon.png
+  title:
+    en_US: Miningcore (Legacy)
+  port_map: '8888'
