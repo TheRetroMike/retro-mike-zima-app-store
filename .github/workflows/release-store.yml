@@ -129,14 +129,14 @@ jobs:
             .cache/build_appstore/image-digest-cache.json
           key: ${{ env.BUILD_CACHE_KEY }}
 
-      - name: Write release job summary
-        if: always()
-        uses: ./.github/actions/write-job-summary
-        with:
-          title: Release Summary
-          report-jsons: |
-            out/build-v2-report.json
-            out/build-v1-report.json
+      #- name: Write release job summary
+      #  if: always()
+      #  uses: ./.github/actions/write-job-summary
+      #  with:
+      #    title: Release Summary
+      #    report-jsons: |
+      #      out/build-v2-report.json
+      #      out/build-v1-report.json
 
       - name: Deploy dist to gh-pages
         uses: peaceiris/actions-gh-pages@v4
