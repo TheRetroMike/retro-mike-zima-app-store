@@ -9,7 +9,18 @@ services:
     ports:
       - "7003:7003"
       - "9003:9003"
-    command: "/usr/bin/dogecoind -printtoconsole -server -prune=2200 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7003 -rpcbind=0.0.0.0 -rpcport=9003 -rpcallowip=0.0.0.0/0 -rpcuser=pooluser -rpcpassword=poolpassword"
+    command:
+      - /usr/bin/dogecoind
+      - -printtoconsole
+      - -server
+      - -prune=2200
+      - -wallet=default
+      - -zmqpubhashblock=tcp://127.0.0.1:7003
+      - -rpcbind=0.0.0.0
+      - -rpcport=9003
+      - -rpcallowip=0.0.0.0/0
+      - -rpcuser=pooluser
+      - -rpcpassword=poolpassword
 x-casaos:
   id: com.retromike.dogecoin
   architectures:
