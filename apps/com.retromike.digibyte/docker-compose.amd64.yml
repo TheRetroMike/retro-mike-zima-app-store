@@ -11,8 +11,17 @@ services:
     - 9001:9001
     - 12024:12024
     entrypoint: /usr/bin/digibyted
-    command: -printtoconsole -server -algo=sha256d -prune=550 -wallet=default -zmqpubhashblock=tcp://127.0.0.1:7001
-      -rpcbind=0.0.0.0 -rpcport=9001 -rpcallowip=0.0.0.0/0 -rpcauth=pooluser:bc1f961ad347f79ab97fa7e3ac35f02a$$eb31de681359ba83be70e2cc178bf7de7b3b7affb29df2fb41907436d8ef734e
+    command:
+    - -printtoconsole
+    - -server
+    - -algo=sha256d
+    - -prune=550
+    - -wallet=default
+    - -zmqpubhashblock=tcp://127.0.0.1:7001
+    - -rpcbind=0.0.0.0
+    - -rpcport=9001
+    - -rpcallowip=0.0.0.0/0
+    - -rpcauth=pooluser:bc1f961ad347f79ab97fa7e3ac35f02a$$eb31de681359ba83be70e2cc178bf7de7b3b7affb29df2fb41907436d8ef734e
 x-casaos:
   id: com.retromike.digibyte
   main: app

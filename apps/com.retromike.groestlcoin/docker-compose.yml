@@ -9,9 +9,18 @@ services:
     ports:
     - 7013:7013
     - 9013:9013
-    command: /usr/bin/groestlcoind -printtoconsole -server -prune=550 -wallet=default
-      -zmqpubhashblock=tcp://127.0.0.1:7013 -rpcbind=0.0.0.0 -rpcport=9013 -rpcallowip=0.0.0.0/0
-      -rpcuser=pooluser -rpcpassword=poolpassword
+    command:
+    - /usr/bin/groestlcoind
+    - -printtoconsole
+    - -server
+    - -prune=550
+    - -wallet=default
+    - -zmqpubhashblock=tcp://127.0.0.1:7013
+    - -rpcbind=0.0.0.0
+    - -rpcport=9013
+    - -rpcallowip=0.0.0.0/0
+    - -rpcuser=pooluser
+    - -rpcpassword=poolpassword
 x-casaos:
   id: com.retromike.groestlcoin
   main: app

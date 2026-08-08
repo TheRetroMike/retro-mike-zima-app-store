@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-08-08T18:38:35Z",
+  "updated_at": "2026-08-08T23:55:43Z",
   "app_count": 24,
   "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
   "apps": [
@@ -21,7 +21,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.bitcoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.bitcoin/meta.json",
-      "content_hash": "4a975e04"
+      "content_hash": "5a0383e6"
     },
     {
       "id": "com.retromike.bitcoin-cash",
@@ -40,7 +40,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.bitcoin-cash/docker-compose.yml",
       "meta_url": "/apps/com.retromike.bitcoin-cash/meta.json",
-      "content_hash": "8306acb0"
+      "content_hash": "98d4466e"
     },
     {
       "id": "com.retromike.bitcoin-ii",
@@ -59,7 +59,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.bitcoin-ii/docker-compose.yml",
       "meta_url": "/apps/com.retromike.bitcoin-ii/meta.json",
-      "content_hash": "4448a6db"
+      "content_hash": "bdc153d7"
     },
     {
       "id": "com.retromike.bitcoin-silver",
@@ -78,7 +78,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.bitcoin-silver/docker-compose.yml",
       "meta_url": "/apps/com.retromike.bitcoin-silver/meta.json",
-      "content_hash": "9fed28ed"
+      "content_hash": "7508a97c"
     },
     {
       "id": "com.retromike.digibyte",
@@ -97,7 +97,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.digibyte/docker-compose.yml",
       "meta_url": "/apps/com.retromike.digibyte/meta.json",
-      "content_hash": "c7e1f3a3"
+      "content_hash": "e40b94c7"
     },
     {
       "id": "com.retromike.dogecoin",
@@ -116,7 +116,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.dogecoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.dogecoin/meta.json",
-      "content_hash": "81a8d7c0"
+      "content_hash": "4f8134e9"
     },
     {
       "id": "com.retromike.dozzle",
@@ -155,7 +155,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.groestlcoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.groestlcoin/meta.json",
-      "content_hash": "f67b516d"
+      "content_hash": "3579e190"
     },
     {
       "id": "com.retromike.homepage",
