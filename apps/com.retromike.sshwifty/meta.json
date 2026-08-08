@@ -1,0 +1,25 @@
+{
+  "architectures": [
+    "amd64",
+    "arm64"
+  ],
+  "description": "Sshwifty is a web-based ssh app that allows you to connect to SSH hosts and also have known ssh/telnet profiles for easy networked server management.",
+  "tagline": "Sshwifty is a web-based ssh app that allows you to connect to SSH hosts.",
+  "developer": "sshwifty",
+  "author": "Retro Mike",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "is_uncontrolled": false,
+  "title": "Sshwifty",
+  "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
+  "id": "com.retromike.sshwifty",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 29861250,
+    "arm64": 29912027
+  }
+}

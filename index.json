@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updated_at": "2026-08-07T14:13:14Z",
-  "app_count": 23,
+  "updated_at": "2026-08-08T18:23:10Z",
+  "app_count": 24,
   "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
   "apps": [
     {
@@ -407,6 +407,26 @@
       "compose_url": "/apps/com.retromike.repocket/docker-compose.yml",
       "meta_url": "/apps/com.retromike.repocket/meta.json",
       "content_hash": "92c9bc2a"
+    },
+    {
+      "id": "com.retromike.sshwifty",
+      "title": "Sshwifty",
+      "tagline": "Sshwifty is a web-based ssh app that allows you to connect to SSH hosts.",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "sshwifty",
+      "architectures": [
+        "amd64",
+        "arm64"
+      ],
+      "icon": "/apps/com.retromike.sshwifty/assets/icon",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.sshwifty/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.sshwifty/meta.json",
+      "content_hash": "114c20fa"
     },
     {
       "id": "com.retromike.watchtower",

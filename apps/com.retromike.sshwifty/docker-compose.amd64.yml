@@ -1,0 +1,20 @@
+name: sshwifty
+services:
+  app:
+    container_name: sshwifty
+    image: niruix/sshwifty:latest@sha256:9b41b6499e0e6251c435e26a4e19a89ff6bc00367aa6a080060b4fae5033b281
+    restart: unless-stopped
+    volumes:
+    - /media/ZimaOS-HD/AppData/sshwifty/sshwifty.config.json:/sshwifty.config.json
+    - /media/ZimaOS-HD/AppData/sshwifty/domain.crt:/domain.crt
+    - /media/ZimaOS-HD/AppData/sshwifty/domain.key:/domain.key
+    environment:
+    - SSHWIFTY_CONFIG=/sshwifty.config.json
+x-casaos:
+  id: com.retromike.sshwifty
+  main: app
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.sshwifty/assets/icon
+  title:
+    en_US: Sshwifty
+  port_map: '8182'
+  scheme: https
