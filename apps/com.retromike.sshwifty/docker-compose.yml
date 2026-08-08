@@ -10,6 +10,8 @@ services:
     - /media/ZimaOS-HD/AppData/sshwifty/domain.key:/domain.key
     environment:
     - SSHWIFTY_CONFIG=/sshwifty.config.json
+    ports:
+    - 8182:8182
 x-casaos:
   id: com.retromike.sshwifty
   main: app
@@ -17,4 +19,5 @@ x-casaos:
   title:
     en_US: Sshwifty
   port_map: '8182'
+  index: /
   scheme: https

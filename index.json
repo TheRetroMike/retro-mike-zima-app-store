@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-08-08T18:23:10Z",
+  "updated_at": "2026-08-08T18:38:35Z",
   "app_count": 24,
   "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
   "apps": [
@@ -426,7 +426,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.sshwifty/docker-compose.yml",
       "meta_url": "/apps/com.retromike.sshwifty/meta.json",
-      "content_hash": "114c20fa"
+      "content_hash": "3241b3e5"
     },
     {
       "id": "com.retromike.watchtower",
