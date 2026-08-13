@@ -1,0 +1,30 @@
+name: retro-mike-salad-dashboard
+services:
+  app:
+    container_name: salad_dashboard
+    image: theretromike/saladdashboard:latest
+    restart: always
+    volumes:
+      - /media/ZimaOS-HD/saladdashboard:/app/data
+    ports:
+      - "86:7000"
+    environment:
+      - AUTH_COOKIE=xxx
+x-casaos:
+  id: com.retromike.salad-dashboard
+  architectures:
+    - amd64
+  main: app
+  description:
+    en_us: Salad Dashboard
+  tagline:
+    en_us: Salad Dashboard
+  developer: Retro Mike
+  author: Retro Mike
+  icon: https://avatars.githubusercontent.com/u/42049504?s=200&v=4
+  thumbnail: ""
+  store_app_id: retro-mike-salad-dashboard
+  title:
+    en_us: Salad Dashboard
+  category: RetroMike
+  port_map: "86"
