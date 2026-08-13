@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updated_at": "2026-08-08T23:55:43Z",
-  "app_count": 24,
+  "updated_at": "2026-08-13T23:05:50Z",
+  "app_count": 25,
   "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
   "apps": [
     {
@@ -407,6 +407,25 @@
       "compose_url": "/apps/com.retromike.repocket/docker-compose.yml",
       "meta_url": "/apps/com.retromike.repocket/meta.json",
       "content_hash": "92c9bc2a"
+    },
+    {
+      "id": "com.retromike.salad-dashboard",
+      "title": "Salad Dashboard",
+      "tagline": "Salad Dashboard",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.salad-dashboard/assets/icon",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.salad-dashboard/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.salad-dashboard/meta.json",
+      "content_hash": "b31e9c82"
     },
     {
       "id": "com.retromike.sshwifty",

@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "Salad Dashboard",
+  "tagline": "Salad Dashboard",
+  "developer": "Retro Mike",
+  "author": "Retro Mike",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "title": "Salad Dashboard",
+  "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
+  "id": "com.retromike.salad-dashboard",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 98540081
+  }
+}
