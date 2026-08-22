@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updated_at": "2026-08-15T22:44:10Z",
-  "app_count": 25,
+  "updated_at": "2026-08-22T16:41:27Z",
+  "app_count": 26,
   "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
   "apps": [
     {
@@ -446,6 +446,25 @@
       "compose_url": "/apps/com.retromike.sshwifty/docker-compose.yml",
       "meta_url": "/apps/com.retromike.sshwifty/meta.json",
       "content_hash": "3241b3e5"
+    },
+    {
+      "id": "com.retromike.tcgp-dashboard",
+      "title": "TCG Player Dashboard",
+      "tagline": "TCG Player Dashboard",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.tcgp-dashboard/assets/icon.svg",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.tcgp-dashboard/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.tcgp-dashboard/meta.json",
+      "content_hash": "863ae7ce"
     },
     {
       "id": "com.retromike.watchtower",

@@ -1,0 +1,20 @@
+name: retro-mike-tcgp-dashboard
+services:
+  app:
+    container_name: tcgp_dashboard
+    image: theretromike/tcgplayerordermanagement:latest@sha256:b5b3fe1c090287d995ab814d69d0a11bd56f42d297143e364d90fc02121d3c9e
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/tcgpdashboard:/app/data
+    ports:
+    - 87:7000
+    environment:
+    - AUTH_COOKIE=xxx
+    - SELLER_ID=xxx
+x-casaos:
+  id: com.retromike.tcgp-dashboard
+  main: app
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.tcgp-dashboard/assets/icon.svg
+  title:
+    en_US: TCG Player Dashboard
+  port_map: '87'
