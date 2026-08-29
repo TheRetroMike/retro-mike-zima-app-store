@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updated_at": "2026-08-22T16:41:27Z",
-  "app_count": 26,
+  "updated_at": "2026-08-29T01:51:46Z",
+  "app_count": 27,
   "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
   "apps": [
     {
@@ -370,6 +370,25 @@
       "content_hash": "09d16509"
     },
     {
+      "id": "com.retromike.quickpod-dashboard",
+      "title": "QuickPod Dashboard",
+      "tagline": "QuickPod Dashboard",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.quickpod-dashboard/assets/icon.svg",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.quickpod-dashboard/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.quickpod-dashboard/meta.json",
+      "content_hash": "edbc2aa3"
+    },
+    {
       "id": "com.retromike.ravencoin",
       "title": "Ravencoin (RVN) Node",
       "tagline": "Ravencoin Cryptocurrency Node.",
@@ -464,7 +483,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.tcgp-dashboard/docker-compose.yml",
       "meta_url": "/apps/com.retromike.tcgp-dashboard/meta.json",
-      "content_hash": "863ae7ce"
+      "content_hash": "7edd26e2"
     },
     {
       "id": "com.retromike.watchtower",

@@ -1,0 +1,19 @@
+name: retro-mike-quickpod-dashboard
+services:
+  app:
+    container_name: quickpod_dashboard
+    image: theretromike/quickpoddashboard:latest
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/quickpoddashboard:/app/data
+    ports:
+    - 89:7000
+    environment:
+    - API_KEY=xxx
+x-casaos:
+  id: com.retromike.quickpod-dashboard
+  main: app
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.quickpod-dashboard/assets/icon.svg
+  title:
+    en_US: QuickPod Dashboard
+  port_map: '89'

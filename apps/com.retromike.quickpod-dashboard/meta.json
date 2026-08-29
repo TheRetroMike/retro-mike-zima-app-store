@@ -1,0 +1,22 @@
+{
+  "architectures": [
+    "amd64"
+  ],
+  "description": "QuickPod Dashboard",
+  "tagline": "QuickPod Dashboard",
+  "developer": "Retro Mike",
+  "author": "Retro Mike",
+  "thumbnail": "",
+  "category": "RetroMike",
+  "title": "QuickPod Dashboard",
+  "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
+  "id": "com.retromike.quickpod-dashboard",
+  "version": "",
+  "categories": [
+    "retromike"
+  ],
+  "min_memory": 0,
+  "min_image_size": {
+    "amd64": 98451847
+  }
+}

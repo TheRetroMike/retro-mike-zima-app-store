@@ -7,7 +7,7 @@ services:
     volumes:
     - /media/ZimaOS-HD/tcgpdashboard:/app/data
     ports:
-    - 87:7000
+    - 88:7000
     environment:
     - AUTH_COOKIE=xxx
     - SELLER_ID=xxx
@@ -17,4 +17,4 @@ x-casaos:
   icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.tcgp-dashboard/assets/icon.svg
   title:
     en_US: TCG Player Dashboard
-  port_map: '87'
+  port_map: '88'
