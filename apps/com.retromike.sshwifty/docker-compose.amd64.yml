@@ -2,7 +2,7 @@ name: sshwifty
 services:
   app:
     container_name: sshwifty
-    image: niruix/sshwifty:latest@sha256:9b41b6499e0e6251c435e26a4e19a89ff6bc00367aa6a080060b4fae5033b281
+    image: niruix/sshwifty:latest@sha256:c28ce03af63aa90fede08325af1b23458340e69c812c0f59cf02b377c9d86fda
     restart: unless-stopped
     volumes:
     - /media/ZimaOS-HD/AppData/sshwifty/sshwifty.config.json:/sshwifty.config.json

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "updated_at": "2026-08-29T01:51:46Z",
-  "app_count": 27,
+  "updated_at": "2026-09-06T15:18:19Z",
+  "app_count": 28,
   "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
   "apps": [
     {
@@ -175,7 +175,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.homepage/docker-compose.yml",
       "meta_url": "/apps/com.retromike.homepage/meta.json",
-      "content_hash": "9ab0572f"
+      "content_hash": "6cc178f7"
     },
     {
       "id": "com.retromike.miningcore",
@@ -213,7 +213,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.miningcore-webui/docker-compose.yml",
       "meta_url": "/apps/com.retromike.miningcore-webui/meta.json",
-      "content_hash": "ec72a3cb"
+      "content_hash": "0feeb510"
     },
     {
       "id": "com.retromike.miningcore-webui-legacy",
@@ -232,7 +232,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.miningcore-webui-legacy/docker-compose.yml",
       "meta_url": "/apps/com.retromike.miningcore-webui-legacy/meta.json",
-      "content_hash": "45f81ad3"
+      "content_hash": "d43cc030"
     },
     {
       "id": "com.retromike.miningcore_legacy",
@@ -444,7 +444,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.salad-dashboard/docker-compose.yml",
       "meta_url": "/apps/com.retromike.salad-dashboard/meta.json",
-      "content_hash": "b31e9c82"
+      "content_hash": "7bb35a73"
     },
     {
       "id": "com.retromike.sshwifty",
@@ -464,7 +464,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.sshwifty/docker-compose.yml",
       "meta_url": "/apps/com.retromike.sshwifty/meta.json",
-      "content_hash": "3241b3e5"
+      "content_hash": "9c137a74"
     },
     {
       "id": "com.retromike.tcgp-dashboard",
@@ -483,7 +483,26 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.tcgp-dashboard/docker-compose.yml",
       "meta_url": "/apps/com.retromike.tcgp-dashboard/meta.json",
-      "content_hash": "7edd26e2"
+      "content_hash": "b7c9a2d0"
+    },
+    {
+      "id": "com.retromike.vastai-dashboard",
+      "title": "Vast AI Dashboard",
+      "tagline": "Vast AI Dashboard",
+      "category": "RetroMike",
+      "categories": [
+        "retromike"
+      ],
+      "author": "Retro Mike",
+      "developer": "Retro Mike",
+      "architectures": [
+        "amd64"
+      ],
+      "icon": "/apps/com.retromike.vastai-dashboard/assets/icon",
+      "thumbnail": "",
+      "compose_url": "/apps/com.retromike.vastai-dashboard/docker-compose.yml",
+      "meta_url": "/apps/com.retromike.vastai-dashboard/meta.json",
+      "content_hash": "3a0f1234"
     },
     {
       "id": "com.retromike.watchtower",
@@ -503,7 +522,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.watchtower/docker-compose.yml",
       "meta_url": "/apps/com.retromike.watchtower/meta.json",
-      "content_hash": "964b065d"
+      "content_hash": "16d71309"
     },
     {
       "id": "com.retromike.wojakcoin",
@@ -522,7 +541,7 @@
       "thumbnail": "",
       "compose_url": "/apps/com.retromike.wojakcoin/docker-compose.yml",
       "meta_url": "/apps/com.retromike.wojakcoin/meta.json",
-      "content_hash": "28df3d5b"
+      "content_hash": "65608bb9"
     }
   ]
 }

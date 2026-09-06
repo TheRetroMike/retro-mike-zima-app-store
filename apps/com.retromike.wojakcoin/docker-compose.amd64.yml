@@ -2,7 +2,7 @@ name: retro-mike-wojakcoin
 services:
   app:
     container_name: wjk
-    image: theretromike/nodes:wojak@sha256:3685eda082a5df07e1bed5e3e5c3851e550014fcfb34f37c2c15603fb135c465
+    image: theretromike/nodes:wojak@sha256:478b51143187f72c56e1f4b77354f7dd3cef35eff25eea04b2d4ee16b6f14459
     restart: always
     volumes:
     - /media/ZimaOS-HD/wjk:/root/.wojakcoin

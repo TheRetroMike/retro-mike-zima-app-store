@@ -2,7 +2,7 @@ name: retro-mike-tcgp-dashboard
 services:
   app:
     container_name: tcgp_dashboard
-    image: theretromike/tcgplayerordermanagement:latest@sha256:b5b3fe1c090287d995ab814d69d0a11bd56f42d297143e364d90fc02121d3c9e
+    image: theretromike/tcgplayerordermanagement:latest@sha256:ba742a1a9aef2a6222bb01cf47050449fe80dc981a5658663383c08e2b9304d8
     restart: always
     volumes:
     - /media/ZimaOS-HD/tcgpdashboard:/app/data

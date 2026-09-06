@@ -2,7 +2,7 @@ name: homepage
 services:
   app:
     container_name: homepage
-    image: ghcr.io/gethomepage/homepage:latest@sha256:7a916ce0641618777a3091d7836ba4831dd08b09b12dfd957d8066fa9479891b
+    image: ghcr.io/gethomepage/homepage:latest@sha256:fb63953c8fbc4b12ba6c51363d3a804611d17092cdd8cd363035fadded48db41
     restart: unless-stopped
     volumes:
     - /media/DATA/AppData/homepage:/app/config

@@ -2,7 +2,7 @@ name: retro-mike-salad-dashboard
 services:
   app:
     container_name: salad_dashboard
-    image: theretromike/saladdashboard:latest@sha256:5a197cab96803903ca5589e5c2f79f7d4fe274dab69fb1b89c53e445d7d3c879
+    image: theretromike/saladdashboard:latest@sha256:2119466d0402abdf5df6e70a0f627c6d2db4fbffcbf7d360b820949a29a7032f
     restart: always
     volumes:
     - /media/ZimaOS-HD/saladdashboard:/app/data

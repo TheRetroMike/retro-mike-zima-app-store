@@ -2,7 +2,7 @@ name: retro-mike-miningcore-webui-legacy
 services:
   app:
     container_name: miningcorewebui_legacy
-    image: theretromike/miningcorewebui:latest@sha256:c037372c718e7985951c03daa7fe6a5fbee881727b30f4dda15984c58fb2dce3
+    image: theretromike/miningcorewebui:latest@sha256:27d4de9ee72309b0fc74b99bf222d88bcf7af0703b9fe93bda3965ec6d732da0
     restart: always
     volumes:
     - /media/ZimaOS-HD/miningcore_legacy:/app/miningcore

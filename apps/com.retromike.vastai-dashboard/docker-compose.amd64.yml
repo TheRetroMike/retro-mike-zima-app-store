@@ -1,0 +1,19 @@
+name: retro-mike-vastai-dashboard
+services:
+  app:
+    container_name: vastai_dashboard
+    image: theretromike/vastaidashboard:latest@sha256:c58c4810ed267a94e4955b8705bae47166fc8f4e378e031b317928f439c152a5
+    restart: always
+    volumes:
+    - /media/ZimaOS-HD/vastaidashboard:/app/data
+    ports:
+    - 90:7000
+    environment:
+    - API_KEY=xxx
+x-casaos:
+  id: com.retromike.vastai-dashboard
+  main: app
+  icon: https://theretromike.github.io/retro-mike-zima-app-store/apps/com.retromike.vastai-dashboard/assets/icon
+  title:
+    en_US: Vast AI Dashboard
+  port_map: '90'

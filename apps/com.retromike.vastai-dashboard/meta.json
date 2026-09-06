@@ -2,21 +2,21 @@
   "architectures": [
     "amd64"
   ],
-  "description": "Salad Dashboard",
-  "tagline": "Salad Dashboard",
+  "description": "Vast AI Dashboard",
+  "tagline": "Vast AI Dashboard",
   "developer": "Retro Mike",
   "author": "Retro Mike",
   "thumbnail": "",
   "category": "RetroMike",
-  "title": "Salad Dashboard",
+  "title": "Vast AI Dashboard",
   "base_url": "https://theretromike.github.io/retro-mike-zima-app-store",
-  "id": "com.retromike.salad-dashboard",
+  "id": "com.retromike.vastai-dashboard",
   "version": "",
   "categories": [
     "retromike"
   ],
   "min_memory": 0,
   "min_image_size": {
-    "amd64": 98534059
+    "amd64": 98454945
   }
 }
